@@ -1,0 +1,9 @@
+.box{
+    /* border: 1px solid red; */
+    border-width: 3px 10px;
+    border-style: solid dashed;
+    border-color: rgb(14, 14, 14);
+    border-radius: 90%;
+    width  :200px;
+    height: 200px;
+}

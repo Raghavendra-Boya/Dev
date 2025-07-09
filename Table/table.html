@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        /*
+        Tables
+
+        What is Table?
+        A table is a collection of related data stored in rows and columns. It is a way to
+        organize data in a structured and easy-to-read format.
+
+        Why we have to Use tables?
+        //1. Easy to Understand
+        //2. Easy to Read
+        //3. Easy to maintain the data
+
+
+        <table>
+            <th>
+                <td></td>
+            </th>
+            <tr>
+                td
+            </tr>
+
+    </table>
+        
+        
+
+    
+        */
+
+        table{
+            border: 1px solid black;
+            
+        }
+        th,td{
+            border: 1px double red;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+<table border="1" style="border-collapse: collapse;">
+    <tr>
+        <th>Name</th>
+         <th>Email</th>
+          <th>Contact</th>
+           <th>Address</th>
+    </tr>
+    <tr>
+        <td>Rajesh</td>
+        <td>Rajesh@gmail.com</td>
+        <td>123456789</td>
+        <td rowspan="2">ABC</td>
+    </tr>
+     <tr>
+        <td>Rakesh</td>
+        <td>Rakesh@gmail.com</td>
+        <td>987654321</td>
+        
+    </tr>
+     <tr>
+        <td>Guru</td>
+        <td>Guru@gmail.com</td>
+        <td>12345987</td>
+        <td>TYU</td>
+    </tr>
+</table>
+
+<table style="border: 1px solid black;" cellspacing="0">
+    <tr>
+        <th rowspan="2">Product</th>
+        <th colspan="2">Sales</th>
+        
+    </tr>
+    <tr>
+      
+        <th>Q1</th>
+        <th>Q2</th>
+    </tr>
+    <tr>
+        <td>Laptop</td>
+        <td>100000</td>
+        <td>85000</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>200000</td>
+        <td>25000</td>
+    </tr>
+</table>
+
+<table>
+    <tr style="background-color: azure;">
+        <th colspan="5">Time Table</th>
+        
+    </tr>
+    <tr>
+
+        <th>Day/Time</th>
+        <th>10 to 11</th>
+        <th>11 to 12</th>
+        <th>12 to 1</th>
+        <th>1 to 3</th>
+    </tr>
+    <tr>
+        <th>Tue</th>
+        <td>2</td>
+        <td>3</td>
+        <td colspan="2" rowspan="2">4</td>
+        
+    </tr>
+    <tr>
+        <th>Wed</th>
+        <td>2</td>
+        <td>3</td>
+       
+    </tr>
+    <tr>
+        <th>Thu</th>
+        <td colspan="2">2</td>
+       
+        <td>4</td>
+        <td>5</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>

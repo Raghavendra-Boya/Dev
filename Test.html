@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BusEase - Book Your Journey</title>
+  
+  <style>
+    /* -------------------------------
+      Universal Selector (Reset Styles)
+    -------------------------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* -------------------------------
+      Header Styling
+    -------------------------------- */
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d32f2f;
+    }
+
+    #main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    /* Pseudo-class - Hover */
+    .nav-link:hover {
+      color: crimson;
+      text-decoration: underline;
+    }
+
+    /* -------------------------------
+      Hero Section
+    -------------------------------- */
+    .hero {
+      padding: 40px;
+      background: linear-gradient(to top, #dbefff, #f5fcff);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    /* Pseudo-class - First Tab Bold */
+    .tab:first-child {
+      font-weight: bold;
+    }
+
+    /* Pseudo-class - Hover on tab */
+    .tab:hover {
+      background-color: #f9f9f9;
+    }
+
+    /* -------------------------------
+      Search Panel
+    -------------------------------- */
+    #search-panel {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-width: 1000px;
+    }
+
+    #search-panel > .input-group {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    /* Attribute Selector */
+    .input-group input[type="text"],
+    .input-group input[type="date"] {
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    /* Attribute Placeholder Selector */
+    input[placeholder] {
+      border: 2px solid lightgray;
+    }
+
+    .date-options {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      background-color: #eee;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Pseudo-element Selector */
+    .search-btn::before {
+      content: "🔍 ";
+    }
+
+    /* Combinator Selector - Adjacent Siblings */
+    .date-options button + button {
+      margin-left: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header id="header">
+    <div class="logo">🚌 BusEase</div>
+    <nav id="main-nav">
+      <ul>
+        <li><a class="nav-link" href="#">Offers</a></li>
+        <li><a class="nav-link" href="#">Track Ticket</a></li>
+        <li><a class="nav-link" href="#">Need Help?</a></li>
+        <li><a class="nav-link" href="#">Login/SignUp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <section class="hero">
+
+    <!-- MODE TABS -->
+    <div class="tabs">
+      <span class="tab active">🚌 Buses</span>
+      <span class="tab">✈️ Flights</span>
+      <span class="tab">🚆 Trains</span>
+      <span class="tab">🏨 Hotels</span>
+    </div>
+
+    <!-- SEARCH PANEL -->
+    <div id="search-panel">
+      <div class="input-group">
+        <input type="text" placeholder="Leaving From" />
+        <input type="text" placeholder="Going To" />
+        <input type="date" />
+      </div>
+      <div class="date-options">
+        <button class="btn">Today</button>
+        <button class="btn">Tomorrow</button>
+        <button class="btn search-btn">Search</button>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

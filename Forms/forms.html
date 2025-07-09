@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+       <fieldset>
+        <legend>User Login form</legend>
+         <label for="name">Name:</label>
+        <input type="text" id="name" name="name...." placeholder="Enter Your Name" minlength="5" maxlength="10" disabled value="Read only Input"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="passwprd"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" placeholder="Enter Your Email: ABC@gmail.com" width="100%"><br><br>
+
+        <input type="tel" name="Number" minlength="10" maxlength="10" pattern="[0-9]{10}"><br><br>
+
+        <input type="number" name="age" maxlength="3" minlength="1" placeholder="Enter Your Age">
+
+        <input type="date" name="Date" ><br><br>
+
+        <input type="time" name="TIme" >
+        <input type="month" name="TIme" >
+
+        <input type="week" name="TIme" >
+
+
+        <input type="color" name="Color">
+        <input type="range">
+        <input type="search">
+
+        <input type="checkbox" name="HTML" id="lang-html" value="html">
+        <label for="lang-html">HTML</label>
+
+        <input type="checkbox" name="HTML" id="lang-html" value="css">
+        <label for="lang-html">CSS</label>
+
+        <input type="checkbox" name="HTML" id="lang-html" value="js">
+        <label for="lang-html">JS</label>
+
+        <Label>Gender:</Label>
+        <input type="radio" value="female" name="gender" id="gender">
+        <label for="gender">Male</label>
+
+        <input type="radio" value="male" name="gender" id="gender">
+        <label for="gender">female</label>
+
+        <label for="country">country:</label>
+        <select name="Country" id="country">
+            <option value="">---Select---</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <textarea name="Adress" placeholder="Enter Somthing upto 200 char"></textarea>
+
+
+
+        <button type="submit">Submit</button>
+       </fieldset>
+
+    </form>
+</body>
+</html>

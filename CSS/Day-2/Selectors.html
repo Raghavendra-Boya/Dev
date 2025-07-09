@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecttors</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        /* p{
+            color: red;
+        }
+        .para{
+            color: blue;
+        }
+        #banner{
+            background-color: yellow;
+        }
+
+        h1,h2,span{
+            color: green;
+            background-color: aqua;
+        }
+
+
+        a:link{
+            color: orangered;
+        }
+
+        .btn:hover{
+            background-color: black;
+            color: white;
+            width: 200px;
+        } */
+
+        /* li:first-child{
+            font-weight: bold;
+        }
+        li:last-child{
+            font-weight: bold;
+        } */
+        li:nth-child(even){
+            font-weight: bold;
+        }
+
+        #before::first-line{
+        
+            color : Green;
+
+        }
+        input[required]{
+            border: 1px solid red;
+        }
+        input[type = "email"]{
+            background-color: lightblue;
+        }
+
+        input[type ^= "t"]{
+            border-radius: 30px;
+        }
+
+        img[alt *= "t"]{
+            width: 200px;
+            height: 100px;
+        }
+
+        .mainParent p{
+            color  :blue;
+        }
+
+        h1~p{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+    
+    
+    What is Selctor:
+    1. Global Selector(*)
+    2. Tag Selextor
+    3. Class Selector(.)---Duplicate
+    4. ID Selector(#)----Unique
+    5. Group Slector(,)
+    6. Pseudo Class Selctor(:)
+
+        1. :Link
+        2. :visited
+        3. :hover
+        4. :first-child & last-child
+        5, nth-child
+    7. Pseudo Element Selector(::)
+        1. before and After
+        2. first Letter & First Line
+
+    8. Attribute Selector([])
+        1. has attribute[attr name]
+        2. Exact match[attrname = "value"]
+        3. starts with[attr name ^="value"]
+        4. ends with[attr name $="value"]
+        5. comtains [att name *="value"]
+    
+    9. Combination Selectors
+        1. Direct child selector(>)
+        2. Descendent Selector( )
+        3. Adjacent sibling selector(+)
+
+
+
+
+    -->
+
+    <p>I am Para</p>
+    <p>I am Para</p>
+    <p class="para">I am Para</p>
+    <p class="para">I am Para</p>
+    <p class="para">I am Para</p>
+
+
+    <div id="banner">Welcome to CSS</div>
+     <div id="banner">Welcome to CSS</div>
+      <div id="banner">Welcome to CSS</div>
+
+      <h1>i am H1 Tag</h1>
+      <h2>I am H2 Tag</h2>
+      <span>I am Span Tag</span>
+
+
+      <a href="#">Example</a>
+      <a href="#">Google</a>
+      <a href="#">I am Anchor with Usd defined Color</a>
+
+      <div>
+        <a href="https://www.youtube.com/">i an Unvisited link</a>
+      </div>
+
+      <button class="btn">Click me</button>
+
+
+      <ol>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+      </ol>
+
+
+      <p id="before" style="width: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt recusandae maiores quae, quo voluptate voluptatum veritatis animi excepturi aut nihil.</p>
+
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Your Name" required>
+      <input type="email" placeholder="Email">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <a href="#" title="Help Link">Help</a>
+      <img src="https://images.pexels.com/photos/32470698/pexels-photo-32470698.jpeg" alt="Alternative text">
+       <img src="https://tse3.mm.bing.net/th/id/OIP.SFePjxiVA220cC8hFaLx7QHaE5?pid=Api&P=0&h=180" alt="second text">
+
+       <div class="mainParent">
+        <div>
+            <h1>I am H1</h1>
+            <!-- <span>A</span> -->
+            <p>I am Para of Child Div</p>
+        </div>
+        <h1 class="box">I am H1</h1>
+        <p>i am para1</p>
+        <span>I am SPan</span>
+        <p>i am para2</p>
+       </div>
+
+       <section>
+        <p>I am para from Section</p>
+        <h2>I am H2</h2>
+       </section>
+</body>
+</html>

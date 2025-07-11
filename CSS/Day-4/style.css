@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: 1000;
+}
+.navbar a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.banner{
+    background-color: bisque;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product img{
+    width: 80%;
+    height: 200px;
+    padding: 20px 20px;
+}
+.product{
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    flex-basis: 22%;
+}
+.products_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}

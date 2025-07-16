@@ -1,0 +1,49 @@
+/* .card{
+    width: 280px;
+    border: 2px solid red;
+    padding: 10px;
+}
+.clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.card:hover .clamp{
+    -webkit-line-clamp: unset;
+    overflow: visible;
+} */
+
+.card{
+    width: 280px;
+    border: 2px solid red;
+    padding: 10px;
+}
+.toggle{
+    display: none;
+}
+
+.clamp{
+   display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    line-height: 2;
+}
+.btn{
+    color: aqua;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn::after{
+    content: "Read More";
+}
+.toggle:checked + .clamp +.btn::after{
+    content: "Read Less";
+}
+.toggle:checked +.clamp{
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
